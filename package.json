@@ -1,16 +1,18 @@
 {
-  "name": "fliper",
+  "name": "@fliper-open-source/nodejs-the-good-way",
+  "description": "A basic opinionated way to start brand new Node.js projects",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "license": "MIT",
+  "main": "src/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Fliper-Open-Source/nodejs-the-good-way.git"
+  },
   "scripts": {
-    "test": "node_modules/.bin/jest",
-    "dev": "node_modules/.bin/nodemon --watch .env --watch src src/index.js",
+    "test": "jest",
+    "dev": "nodemon --watch .env --watch src src/index.js",
     "start": "NODE_ENV=production node src/index.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "devDependencies": {
     "eslint": "^7.4.0",
     "eslint-config-standard": "^14.1.1",
